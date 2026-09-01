@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROJETO 3ºBIMESTRE</title>
+</head>
+<body>
+    <h1>PROJETO 3ºBIMESTRE</h1>
+    <div id="divResposta"></div>
+    <input type="text01" id="txtdado01">
+    <input type="text02"id="txtDado02">
+
+<button id="bnt01">CLICK Aqui</button>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded",() => {
+
+            let x = 0;
+
+            const txtdado01 = document.getElementById("txtdado01");
+            const bnt = document.getElementById("bnt01");
+
+            bnt.addEventListener("click",()=> {
+            x++;
+
+            txtdado01.value = `Olá mundo :) ${x}`;
+            });
+        });
+        </script>
+    </body>
+</html>
